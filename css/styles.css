@@ -1,0 +1,375 @@
+*{
+  box-sizing: border-box;
+  margin:0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+
+.contenedor{
+  width: 100%;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.header{
+  width: 100%;
+  height: 200px;
+  background-color: #fcfff5;
+}
+
+.logo{
+  margin: 15px 0px;
+
+}
+
+.logo img{
+  width: 200px;
+  display: block;
+  margin:auto;
+}
+
+.menudiv{
+  display: block;
+  margin: 15px 0px;
+
+
+}
+
+.limpiar{
+  clear: both;
+}
+
+  .menu{
+    display: flex;
+    flex-direction: row;
+    flex-wrap:nowrap;
+    justify-content: space-space-around;
+    max-width: 450px;
+    margin: auto;
+  }
+
+  .menu a{
+    text-decoration: none;
+    color: black;
+    font-size: 12px;
+    margin:0px 8px;
+    padding: 3px;
+    transition: all 0.8s ease-in-out;
+  }
+
+  .menu a:hover{
+    color:white;
+    padding: 5px 20px;
+    background-color: black;
+  }
+
+  /*fin encabezado*/
+
+  /*banner*/
+
+  .banner{
+    width: 100%;
+    height: 500px;
+
+    background-image: url("http://exuberant-invention.surge.sh/css/../img/guitarrasbanner.jpg");
+    background-position: center;
+    background-size: cover;}
+
+
+    .banner > div{
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.4);
+    }
+
+    .cambio{
+      text-align: center;
+      display: flex;
+      flex-flow: column wrap;
+      justify-content: center;
+      align-items: center;
+      height:100%;
+    }
+
+    .cambio p{
+      font-size: 14px;
+      color: white;
+      text-transform: uppercase;
+      margin-bottom: 20px;
+    }
+
+    .cambio h2{
+      font-size: 42px;
+      color: #555555;
+      font-weight: lighter;
+      width: 100%;
+      max-width: 470px;
+      padding: 45px 0;
+      background-color: rgba(255, 255, 255, 0.7);
+
+    }
+
+    .cambio a{
+      padding: 10px 50px;
+      font-size: 18px;
+      text-decoration: none;
+      color: #555555;
+      background-color: rgba(255, 255, 255, 0.7);
+      margin-top: 35px;
+
+      transition: all 0.5s ease-in-out;
+    }
+
+    .cambio a:hover{
+      color: #ffffff;
+      background-color: rgba(0, 0, 0, 0.8);
+    }
+
+    /*fin banner */
+
+    /* comienzo galeria*/
+    .galeria{
+      width: 100%;
+      background-color: #262626;
+      padding-bottom: 20px;
+      text-align: center;
+    }
+    .galeria > .contenedor{
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+
+    }
+
+    .galeria p{
+      color:#ffffff;
+      max-width: 400px;
+      padding: 10px;
+      margin: auto;
+    }
+    .imgal{
+      width: 100%;
+      max-width:740px;
+      margin-bottom: 20px;
+}
+      .imgal img{
+        width: 100%;
+        transition: all 0.5s ease-in-out;
+      }
+
+
+.imgal img:hover{
+      transform: scale(1.1);
+    }
+
+
+
+.titlediv{
+ background-color: black;
+ text-align: center;
+}
+
+.titlediv p{
+  font-size: 20px;
+  color: white;
+  padding: 5px 0px;
+}
+
+
+
+.top-line, .bottom-line{
+  height: 15px;
+  background-color: #193441;
+  color: #5a5a5a;
+  text-align: center;
+  font-size: 10px;
+
+}
+
+.bottom-line p{
+  padding:1px 0;
+}
+
+.marcas{
+  background-color:#152d37;
+  color:#9a9a9a;
+}
+
+.marcas .widget{
+  text-align: center;
+  padding-top: 18px;
+  padding-bottom: 33px;
+  padding-left: 10px;
+  padding-right: 10px;
+  max-width: 600px;
+  margin:0 auto;
+  transition: all 0.5s ease-in-out;
+}
+
+.widget:hover{
+  background-color: rgba(255, 255, 255, 0.7);
+  color: #353535;
+}
+
+.widget h4{
+  font-size: 20px;
+  padding-bottom: 35px;
+}
+
+/*inicio seccion clientes*/
+
+.clientes{
+  background-color:#152d37;
+  color:#9a9a9a;
+}
+
+.center-clientes >.contenedor{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.cliente{
+  max-width: 270px;
+  margin-bottom: 25px;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.02);
+}
+
+.cliente p{
+  margin: 10px 15px;
+  line-height: 1.5em;
+}
+.foto-cliente{
+  width: 100%;
+  }
+
+.foto-cliente img{
+  width: 100%;
+}
+
+
+/*fin seccion clientes*/
+
+/*inicio seccion footer*/
+.footer{
+  width: 100%;
+  height: 285px;
+  background-image: url("http://exuberant-invention.surge.sh/css/../img/guitarrasfooter.webp");
+  background-position: center;
+  background-size: cover;
+}
+.social {
+  position: absolute;
+  right: 0;
+}
+.social ul {
+    list-style: none;
+}
+.social ul li a {
+    display:inline-block;
+    color: #fff;
+    background: #000;
+    padding: 10px 15px;
+    text-decoration: none;
+    -webkit-transition: all 500ms ease;
+    -o-transition: all 500ms ease;
+    transition: all 500ms ease;
+}
+.social ul li .icon-facebook {
+    background: #3b5998;
+}
+.social ul li .icon-twitter {
+    background: #00abf0;
+}
+.social ul li .icon-instagram {
+    background: #d95232;
+}
+.social ul li .icon-linkedin {
+    background: #17CF83;
+}
+.social ul li a:hover {
+    background: rgb(61, 76, 85);
+    padding: 10px 30px;
+}
+
+
+.footer >div{
+  width: 100%;
+  height:100%;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+/* fin seccion footer*/
+
+/*mediaqueries*/
+
+@media all and (min-width:769px){
+  .menudiv{
+    float: right;
+    margin: 15px 0px;
+  }
+  .menu{
+    padding-top: 60px;
+  }
+
+  .menu a{
+    font-size: 14px;
+    margin:0px 13px;
+  }
+
+  .logo{
+      float: left;
+  }
+
+  .cambio p{
+    font-size: 18px;
+  }
+
+  .galeria > .contenedor{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;}
+    .imgal{
+      width: 100%;
+      max-width:370px;
+      height: 190px;
+      margin-bottom: 20px;
+    }
+    .imgal img{
+      width: 100%;
+      max-height: 190px;
+    }
+
+
+    .titlediv{
+      background-color: black;
+      text-align: left;
+      padding-left: 5px;
+    }
+
+    .center-marcas > .contenedor{
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+    }
+
+    .marcas .widget{
+      text-align: center;
+      padding-top: 18px;
+      padding-bottom: 33px;
+      max-width: 262px;
+      margin:0 auto;
+    }
+
+    .center-clientes >.contenedor{
+      justify-content: space-between;
+    }
